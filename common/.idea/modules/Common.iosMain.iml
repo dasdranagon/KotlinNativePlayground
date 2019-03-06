@@ -28,7 +28,9 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../build/classes/kotlin/ios/main" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../src/iosMain" />
+    <content url="file://$MODULE_DIR$/../../src/iosMain">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/iosMain/kotlin" isTestSource="false" />
+    </content>
     <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Common.commonMain" />

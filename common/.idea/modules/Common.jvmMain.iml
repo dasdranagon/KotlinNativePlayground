@@ -28,7 +28,9 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../build/classes/kotlin/jvm/main" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../src/jvmMain" />
+    <content url="file://$MODULE_DIR$/../../src/jvmMain">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/jvmMain/kotlin" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Common.commonMain" />

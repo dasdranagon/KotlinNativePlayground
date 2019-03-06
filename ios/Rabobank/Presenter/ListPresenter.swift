@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Common
 
 class ListPresenter {
     weak var view: ListView!
@@ -54,6 +55,7 @@ extension ListPresenter: ListEventsHandler {
         loadingLock.lock { [weak self] in
             self?.view.processing(show: true)
             self?.dataSource.fetch()
+            return KotlinUnit()
         }
     }
 }

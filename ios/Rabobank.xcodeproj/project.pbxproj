@@ -41,7 +41,6 @@
 		BC573B152223FF2B00093E94 /* CSVTextParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B142223FF2B00093E94 /* CSVTextParserTests.swift */; };
 		BC573B192224090800093E94 /* ListError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B182224090800093E94 /* ListError.swift */; };
 		BC573B1B2224263D00093E94 /* issues.csv in Resources */ = {isa = PBXBuildFile; fileRef = BC573B1A2224263D00093E94 /* issues.csv */; };
-		BC573B1E2224449000093E94 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B1D2224449000093E94 /* Lock.swift */; };
 		BC98EFF222202DD400607734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF122202DD400607734 /* Assets.xcassets */; };
 		BC98EFF522202DD400607734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF322202DD400607734 /* LaunchScreen.storyboard */; };
 		BC9990D3222FE5E600D00BB6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9990CC222FE5E600D00BB6 /* Common.framework */; };
@@ -125,7 +124,6 @@
 		BC573B142223FF2B00093E94 /* CSVTextParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVTextParserTests.swift; sourceTree = "<group>"; };
 		BC573B182224090800093E94 /* ListError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListError.swift; sourceTree = "<group>"; };
 		BC573B1A2224263D00093E94 /* issues.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = issues.csv; sourceTree = "<group>"; };
-		BC573B1D2224449000093E94 /* Lock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
 		BC98EFE722202DD300607734 /* Rabobank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rabobank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC98EFF122202DD400607734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC98EFF422202DD400607734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -174,14 +172,6 @@
 				BC38694B2228177A006A1808 /* DefaultPersonsFactory.swift */,
 			);
 			path = Factory;
-			sourceTree = "<group>";
-		};
-		BC386951222933E9006A1808 /* Async */ = {
-			isa = PBXGroup;
-			children = (
-				BC573B1D2224449000093E94 /* Lock.swift */,
-			);
-			path = Async;
 			sourceTree = "<group>";
 		};
 		BC573A65222045E700093E94 /* Model */ = {
@@ -258,7 +248,6 @@
 		BC573A882222842800093E94 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				BC386951222933E9006A1808 /* Async */,
 				BC38694822281629006A1808 /* Factory */,
 				BC573A8E222284E900093E94 /* Source */,
 				BC573A8D222284DC00093E94 /* Parser */,
@@ -593,7 +582,6 @@
 				BC573A812220543300093E94 /* ListPresenter.swift in Sources */,
 				BC38694C2228177B006A1808 /* DefaultPersonsFactory.swift in Sources */,
 				BC573A7922204BA900093E94 /* ListView.swift in Sources */,
-				BC573B1E2224449000093E94 /* Lock.swift in Sources */,
 				BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */,
 				BC386950222827BC006A1808 /* AppDelegate.swift in Sources */,
 				BC573A632220446E00093E94 /* ListAssembly.swift in Sources */,

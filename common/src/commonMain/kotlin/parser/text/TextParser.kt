@@ -1,7 +1,7 @@
 package parser.text
 
-typealias Row = List<String>
+typealias TextParserRow = List<String>
 
 interface TextParser {
-    fun parse(text: String): List<Row>?
+    fun parse(text: String): List<TextParserRow>?
 }

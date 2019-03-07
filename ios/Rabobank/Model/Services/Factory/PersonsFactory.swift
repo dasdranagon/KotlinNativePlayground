@@ -6,7 +6,7 @@
 //  Copyright © 2019 Dennis Skokov. All rights reserved.
 //
 
-
 protocol PersonsFactory {
-    func create(row: TextParser.Row) -> Person?
+    typealias Row = [String]
+    func create(row: Row) -> Person?
 }

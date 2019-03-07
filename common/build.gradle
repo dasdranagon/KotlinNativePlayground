@@ -12,6 +12,10 @@ kotlin {
         fromPreset(getIOSPreset(), 'ios') {
             compilations.create("Common") {
                 outputKinds('FRAMEWORK')
+                defaultSourceSet {
+                    dependsOn compilations.main.defaultSourceSet
+                }
+
             }
         }
 
@@ -31,10 +35,10 @@ kotlin {
             }
         }
             
-        iosCommon {
-            kotlin.srcDir("src/iosMain/kotlin")
-            resources.srcDir("src/iosMain/resources")
-        }
+//        iosCommon {
+//            kotlin.srcDir("src/iosMain/kotlin")
+//            resources.srcDir("src/iosMain/resources")
+//        }
     }
 }
 

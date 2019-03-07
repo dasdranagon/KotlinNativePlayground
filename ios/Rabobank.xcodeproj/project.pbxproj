@@ -25,9 +25,7 @@
 		BC573A8C222284AC00093E94 /* DefaultListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A8B222284AC00093E94 /* DefaultListDataSource.swift */; };
 		BC573A902222850A00093E94 /* TextSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A8F2222850A00093E94 /* TextSource.swift */; };
 		BC573A92222285E400093E94 /* BundleTextSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A91222285E400093E94 /* BundleTextSource.swift */; };
-		BC573A94222286B800093E94 /* TextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A93222286B800093E94 /* TextParser.swift */; };
 		BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9622228B5600093E94 /* ErrorHandler.swift */; };
-		BC573A9922228D7400093E94 /* CSVTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9822228D7400093E94 /* CSVTextParser.swift */; };
 		BC573B032223658400093E94 /* ListDataSourceOutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573AA12222A15B00093E94 /* ListDataSourceOutputTests.swift */; };
 		BC573B042223676800093E94 /* ListEventsHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */; };
 		BC573B052223676F00093E94 /* ListDataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9D222292EA00093E94 /* ListDataSourceMock.swift */; };
@@ -570,7 +568,6 @@
 				BC573B192224090800093E94 /* ListError.swift in Sources */,
 				BC386947222814A4006A1808 /* PersonsFactory.swift in Sources */,
 				BC573A902222850A00093E94 /* TextSource.swift in Sources */,
-				BC573A94222286B800093E94 /* TextParser.swift in Sources */,
 				BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */,
 				BC573A8A2222846400093E94 /* ListDataSource.swift in Sources */,
 				BC573A842221DB6200093E94 /* Person.swift in Sources */,
@@ -585,7 +582,6 @@
 				BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */,
 				BC386950222827BC006A1808 /* AppDelegate.swift in Sources */,
 				BC573A632220446E00093E94 /* ListAssembly.swift in Sources */,
-				BC573A9922228D7400093E94 /* CSVTextParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

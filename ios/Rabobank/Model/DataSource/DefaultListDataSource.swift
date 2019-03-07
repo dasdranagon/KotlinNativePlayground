@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Common
 
 class DefaultListDataSource: ListDataSource {
     private let source: TextSource
@@ -36,21 +37,17 @@ class DefaultListDataSource: ListDataSource {
 extension DefaultListDataSource {
     
     func process(text: String) {
-        DispatchQueue.global(qos: .utility).async { [weak self] in
-            do {
-                guard let rows = try self?.parser.parse(text: text) else {
-                    self?.proceedInMainThread(error: .unknown)
-                    return
-                }
-                self?.process(rows: rows)
-
-            } catch {
-                self?.proceedInMainThread(error: .parsingError)
+        /// Kotlin native code is thread local
+//        DispatchQueue.global(qos: .utility).async { [weak self] in
+            guard let rows = parser.parse(text: text) else {
+                self.proceedInMainThread(error: .unknown)
+                return
             }
-        }
+            process(rows: rows)
+//        }
     }
     
-    private func process(rows: [TextParser.Row] ) {
+    private func process(rows: [[String]] ) {
         let persons = rows.dropFirst().compactMap { [weak self] row in
             return self?.factory.create(row: row)
         }

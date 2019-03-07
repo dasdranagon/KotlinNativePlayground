@@ -1,4 +1,4 @@
-package org.kotlin.mpp.mobile.service.async
+package service.async
 
 typealias Block = () -> Unit
 class Lock {

@@ -29,16 +29,22 @@ kotlin {
             }
         }
 
+        commonTest {
+            dependencies {
+                implementation kotlin('test-common')
+                implementation kotlin('test-annotations-common')
+            }
+        }
+        
         jvmMain {
             dependencies {
                 implementation kotlin('stdlib')
             }
         }
+
+        jvmTest {
             
-//        iosCommon {
-//            kotlin.srcDir("src/iosMain/kotlin")
-//            resources.srcDir("src/iosMain/resources")
-//        }
+        }
     }
 }
 

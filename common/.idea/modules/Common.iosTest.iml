@@ -5,8 +5,8 @@
       <configuration version="3" platform="Native " useProjectSettings="false" isTestModule="true" externalProjectId="Common">
         <sourceSets>
           <sourceSet>Common.commonTest</sourceSet>
-          <sourceSet>Common.commonMain</sourceSet>
           <sourceSet>Common.iosMain</sourceSet>
+          <sourceSet>Common.commonMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />
@@ -46,7 +46,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="Common.iosMain" scope="TEST" />
+    <orderEntry type="module" module-name="Common.commonMain" scope="TEST" />
     <orderEntry type="module-library" scope="TEST">
       <library>
         <CLASSES>
@@ -1082,7 +1082,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="Common.commonMain" scope="TEST" />
+    <orderEntry type="module" module-name="Common.iosMain" scope="TEST" />
   </component>
   <component name="TestModuleProperties" production-module="Common.iosMain" />
 </module>

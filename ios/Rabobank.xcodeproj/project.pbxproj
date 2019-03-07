@@ -104,9 +104,7 @@
 		BC573A8B222284AC00093E94 /* DefaultListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultListDataSource.swift; sourceTree = "<group>"; };
 		BC573A8F2222850A00093E94 /* TextSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSource.swift; sourceTree = "<group>"; };
 		BC573A91222285E400093E94 /* BundleTextSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleTextSource.swift; sourceTree = "<group>"; };
-		BC573A93222286B800093E94 /* TextParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextParser.swift; sourceTree = "<group>"; };
 		BC573A9622228B5600093E94 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
-		BC573A9822228D7400093E94 /* CSVTextParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVTextParser.swift; sourceTree = "<group>"; };
 		BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsHandlerTests.swift; sourceTree = "<group>"; };
 		BC573A9D222292EA00093E94 /* ListDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSourceMock.swift; sourceTree = "<group>"; };
 		BC573A9F2222930A00093E94 /* ListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewMock.swift; sourceTree = "<group>"; };
@@ -248,18 +246,8 @@
 			children = (
 				BC38694822281629006A1808 /* Factory */,
 				BC573A8E222284E900093E94 /* Source */,
-				BC573A8D222284DC00093E94 /* Parser */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		BC573A8D222284DC00093E94 /* Parser */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A93222286B800093E94 /* TextParser.swift */,
-				BC573A9822228D7400093E94 /* CSVTextParser.swift */,
-			);
-			path = Parser;
 			sourceTree = "<group>";
 		};
 		BC573A8E222284E900093E94 /* Source */ = {

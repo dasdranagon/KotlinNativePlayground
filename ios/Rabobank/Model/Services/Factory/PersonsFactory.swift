@@ -6,6 +6,8 @@
 //  Copyright © 2019 Dennis Skokov. All rights reserved.
 //
 
+import main
+
 protocol PersonsFactory {
     typealias Row = [String]
     func create(row: Row) -> Person?

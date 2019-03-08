@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import main
 
 class DefaultPersonsFactory: PersonsFactory {
     
@@ -36,7 +37,7 @@ class DefaultPersonsFactory: PersonsFactory {
         
         return Person(firstName: firstName,
                       surname: surname,
-                      issueCount: issuCount,
+                      issueCount: Int32(issuCount),
                       dateOfBirth: date)
     }
 }

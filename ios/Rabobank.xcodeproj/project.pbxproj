@@ -20,7 +20,6 @@
 		BC573A7B22204BDF00093E94 /* ListDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */; };
 		BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7E222053A500093E94 /* ListEventsHandler.swift */; };
 		BC573A812220543300093E94 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A802220543300093E94 /* ListPresenter.swift */; };
-		BC573A842221DB6200093E94 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A832221DB6200093E94 /* Person.swift */; };
 		BC573A8A2222846400093E94 /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A892222846400093E94 /* ListDataSource.swift */; };
 		BC573A8C222284AC00093E94 /* DefaultListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A8B222284AC00093E94 /* DefaultListDataSource.swift */; };
 		BC573A902222850A00093E94 /* TextSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A8F2222850A00093E94 /* TextSource.swift */; };
@@ -99,7 +98,6 @@
 		BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDisplayItem.swift; sourceTree = "<group>"; };
 		BC573A7E222053A500093E94 /* ListEventsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsHandler.swift; sourceTree = "<group>"; };
 		BC573A802220543300093E94 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
-		BC573A832221DB6200093E94 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		BC573A892222846400093E94 /* ListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
 		BC573A8B222284AC00093E94 /* DefaultListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultListDataSource.swift; sourceTree = "<group>"; };
 		BC573A8F2222850A00093E94 /* TextSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSource.swift; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				BC573A9522228B3500093E94 /* ErrorHandling */,
-				BC573A822221DB4A00093E94 /* Enities */,
 				BC573A882222842800093E94 /* Services */,
 				BC573A87222283E500093E94 /* DataSource */,
 			);
@@ -221,14 +218,6 @@
 				BC573A7422204AF300093E94 /* ListTableViewCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		BC573A822221DB4A00093E94 /* Enities */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A832221DB6200093E94 /* Person.swift */,
-			);
-			path = Enities;
 			sourceTree = "<group>";
 		};
 		BC573A87222283E500093E94 /* DataSource */ = {
@@ -558,7 +547,6 @@
 				BC573A902222850A00093E94 /* TextSource.swift in Sources */,
 				BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */,
 				BC573A8A2222846400093E94 /* ListDataSource.swift in Sources */,
-				BC573A842221DB6200093E94 /* Person.swift in Sources */,
 				BC573A92222285E400093E94 /* BundleTextSource.swift in Sources */,
 				BC573A7722204B5400093E94 /* ListTableViewController.swift in Sources */,
 				BC573A7B22204BDF00093E94 /* ListDisplayItem.swift in Sources */,

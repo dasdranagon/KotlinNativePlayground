@@ -5,8 +5,8 @@
       <configuration version="3" platform="JVM 1.6" useProjectSettings="false" isTestModule="true" externalProjectId="Common">
         <sourceSets>
           <sourceSet>Common.jvmMain</sourceSet>
-          <sourceSet>Common.commonMain</sourceSet>
           <sourceSet>Common.commonTest</sourceSet>
+          <sourceSet>Common.commonMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />
@@ -53,8 +53,8 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.3.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-common:1.3.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.21" level="project" />
-    <orderEntry type="module" module-name="Common.commonTest" scope="TEST" />
     <orderEntry type="module" module-name="Common.commonMain" scope="TEST" />
+    <orderEntry type="module" module-name="Common.commonTest" scope="TEST" />
   </component>
   <component name="TestModuleProperties" production-module="Common.jvmMain" />
 </module>

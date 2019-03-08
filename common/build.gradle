@@ -12,13 +12,8 @@ kotlin {
         fromPreset(getIOSPreset(), 'ios') {
             compilations.main {
                 outputKinds 'FRAMEWORK'
-//                extraOpts '-module-name', rootProject.name
 
             }
-
-//            binaries {
-//                framework('Common')
-//            }
         }
 
         fromPreset(presets.jvm, 'jvm')

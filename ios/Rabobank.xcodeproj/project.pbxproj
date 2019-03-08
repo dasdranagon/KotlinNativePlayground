@@ -20,8 +20,6 @@
 		BC573A812220543300093E94 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A802220543300093E94 /* ListPresenter.swift */; };
 		BC573A8A2222846400093E94 /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A892222846400093E94 /* ListDataSource.swift */; };
 		BC573A8C222284AC00093E94 /* DefaultListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A8B222284AC00093E94 /* DefaultListDataSource.swift */; };
-		BC573A902222850A00093E94 /* TextSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A8F2222850A00093E94 /* TextSource.swift */; };
-		BC573A92222285E400093E94 /* BundleTextSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A91222285E400093E94 /* BundleTextSource.swift */; };
 		BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9622228B5600093E94 /* ErrorHandler.swift */; };
 		BC573B032223658400093E94 /* ListDataSourceOutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573AA12222A15B00093E94 /* ListDataSourceOutputTests.swift */; };
 		BC573B042223676800093E94 /* ListEventsHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */; };
@@ -96,8 +94,6 @@
 		BC573A802220543300093E94 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		BC573A892222846400093E94 /* ListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
 		BC573A8B222284AC00093E94 /* DefaultListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultListDataSource.swift; sourceTree = "<group>"; };
-		BC573A8F2222850A00093E94 /* TextSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSource.swift; sourceTree = "<group>"; };
-		BC573A91222285E400093E94 /* BundleTextSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleTextSource.swift; sourceTree = "<group>"; };
 		BC573A9622228B5600093E94 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsHandlerTests.swift; sourceTree = "<group>"; };
 		BC573A9D222292EA00093E94 /* ListDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSourceMock.swift; sourceTree = "<group>"; };
@@ -159,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				BC573A9522228B3500093E94 /* ErrorHandling */,
-				BC573A882222842800093E94 /* Services */,
 				BC573A87222283E500093E94 /* DataSource */,
 			);
 			path = Model;
@@ -215,23 +210,6 @@
 				BC573B182224090800093E94 /* ListError.swift */,
 			);
 			path = DataSource;
-			sourceTree = "<group>";
-		};
-		BC573A882222842800093E94 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A8E222284E900093E94 /* Source */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		BC573A8E222284E900093E94 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A8F2222850A00093E94 /* TextSource.swift */,
-				BC573A91222285E400093E94 /* BundleTextSource.swift */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 		BC573A9522228B3500093E94 /* ErrorHandling */ = {
@@ -529,10 +507,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC573B192224090800093E94 /* ListError.swift in Sources */,
-				BC573A902222850A00093E94 /* TextSource.swift in Sources */,
 				BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */,
 				BC573A8A2222846400093E94 /* ListDataSource.swift in Sources */,
-				BC573A92222285E400093E94 /* BundleTextSource.swift in Sources */,
 				BC573A7722204B5400093E94 /* ListTableViewController.swift in Sources */,
 				BC573A7B22204BDF00093E94 /* ListDisplayItem.swift in Sources */,
 				BC573A8C222284AC00093E94 /* DefaultListDataSource.swift in Sources */,

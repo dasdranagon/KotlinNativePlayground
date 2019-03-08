@@ -13,5 +13,5 @@ protocol ListDataSource: AnyObject {
 }
 
 protocol ListDataSourceOutput: AnyObject {
-    func update(items:[Person])
+    func update(items: [Person])
 }

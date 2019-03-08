@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02e623be-f92f-44d3-8013-ed767a10199c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/dennisskokov.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commonMain/kotlin/service/source/BundleTextSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commonMain/kotlin/service/source/TextSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/iosMain/kotlin/service/source/BundleTextSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/service/source/BundleTextSource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Common.commonMain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Common.commonMain.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Common.commonTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Common.commonTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Common.iosMain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Common.iosMain.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Common.iosTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Common.iosTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Common.jvmTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Common.jvmTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commonMain/kotlin/service/date/Date.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonMain/kotlin/service/date/Date.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commonMain/kotlin/service/factory/DefaultPersonsFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonMain/kotlin/service/factory/DefaultPersonsFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/iosMain/kotlin/service/date/Date.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/iosMain/kotlin/service/date/Date.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jvmMain/kotlin/service/date/Date.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/service/date/Date.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/Rabobank.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Rabobank.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/Rabobank/Model/Services/Factory/DefaultPersonsFactory.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/Rabobank/Model/Services/Factory/PersonsFactory.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/RabobankTests/List/Tests/CSVTextParserTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/RabobankTests/List/Tests/CSVTextParserTests.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/RabobankTests/List/Tests/ListDataSourceOutputTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/RabobankTests/List/Tests/ListDataSourceOutputTests.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/RabobankTests/List/Tests/ListDataSourceTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/RabobankTests/List/Tests/ListDataSourceTests.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/RabobankTests/List/Tests/Mocks/ListDataSourceOutputMock.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/RabobankTests/List/Tests/Mocks/ListDataSourceOutputMock.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/RabobankTests/List/Tests/Mocks/TextParserMock.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/RabobankTests/List/Tests/Mocks/TextParserMock.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/RabobankTests/List/Tests/PersonsFactoryTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/RabobankTests/List/Tests/PersonsFactoryTests.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/Rabobank/Model/DataSource/ListDataSource.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Rabobank/Model/DataSource/ListDataSource.swift" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -65,34 +62,67 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
+        <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/service/source/TextSource.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="16" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/service/async/Lock.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/service/source/BundleTextSource.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/jvmMain/kotlin/service/source/BundleTextSource.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/service/factory/DefaultPersonsFactory.kt">
+        <entry file="file://$PROJECT_DIR$/src/iosMain/kotlin/service/source/BundleTextSource.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="330">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
-                <element signature="e#25#81#0" expanded="true" />
+                <element signature="e#24#172#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/service/factory/PersonsFactory.kt">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Foundation/linkdata/package_platform.Foundation/000_Foundation.knm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="255" column="58" selection-start-line="255" selection-start-column="58" selection-end-line="255" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -107,49 +137,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jvmMain/kotlin/service/date/Date.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/iosMain/kotlin/service/date/Date.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-              <folding>
-                <element signature="e#22#151#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Foundation/linkdata/package_platform.Foundation/004_Foundation.knm">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
               <caret line="1128" column="60" selection-start-line="1128" selection-start-column="52" selection-end-line="1128" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/service/date/Date.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/entities/Person.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -169,10 +160,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Enum" />
-        <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Object" />
         <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -207,12 +198,17 @@
         <option value="$PROJECT_DIR$/src/commonMain/kotlin/entity/Person.kt" />
         <option value="$PROJECT_DIR$/src/commonMain/kotlin/service/factory/PersonsFactory.kt" />
         <option value="$PROJECT_DIR$/src/commonMain/kotlin/parser/text/CSVTextParser.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/commonMain/kotlin/entities/Person.kt" />
         <option value="$PROJECT_DIR$/src/jvmMain/kotlin/service/date/Date.kt" />
         <option value="$PROJECT_DIR$/src/commonMain/kotlin/service/date/Date.kt" />
         <option value="$PROJECT_DIR$/src/iosMain/kotlin/service/date/Date.kt" />
         <option value="$PROJECT_DIR$/src/commonMain/kotlin/service/factory/DefaultPersonsFactory.kt" />
+        <option value="$PROJECT_DIR$/src/commonMain/kotlin/service/textSource/TextSource.kt" />
+        <option value="$PROJECT_DIR$/src/commonMain/kotlin/service/source/TextSource.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/commonMain/kotlin/service/source/BundleTextSource.kt" />
+        <option value="$PROJECT_DIR$/src/jvmMain/kotlin/service/source/BundleTextSource.kt" />
+        <option value="$PROJECT_DIR$/src/iosMain/kotlin/service/source/BundleTextSource.kt" />
       </list>
     </option>
   </component>
@@ -282,14 +278,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="commonMain" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="commonMain" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="text" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -307,7 +295,7 @@
               <item name="commonMain" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="date" type="462c0819:PsiDirectoryNode" />
+              <item name="async" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Common" type="b2602c69:ProjectViewProjectNode" />
@@ -316,7 +304,7 @@
               <item name="commonMain" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Common" type="b2602c69:ProjectViewProjectNode" />
@@ -337,7 +325,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="iosMain" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="date" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="iosMain" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Common" type="b2602c69:ProjectViewProjectNode" />
@@ -358,13 +355,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="jvmMain" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="date" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Common" type="b2602c69:ProjectViewProjectNode" />
               <item name="common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="jvmTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="jvmMain" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Common" type="b2602c69:ProjectViewProjectNode" />
@@ -378,7 +378,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552045840422" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552058418235" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -503,7 +503,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.83542717" visible="true" weight="0.35642457" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.83542717" visible="true" weight="0.35642457" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32960895" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006281" side_tool="true" weight="0.32960895" />
@@ -562,13 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/service/async/Lock.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/bin/ios/mainDebugFramework/main.framework/Info.plist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -584,13 +577,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/iosMain/kotlin/Common.kt" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -599,8 +585,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -635,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/parser/text/CSVTextParser.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/service/date/Date.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -672,6 +651,65 @@
           <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#25#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/service/async/Lock.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/service/source/TextSource.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Foundation/linkdata/package_platform.Foundation/000_Foundation.knm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="255" column="58" selection-start-line="255" selection-start-column="58" selection-end-line="255" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/parser/text/CSVTextParser.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commonMain/kotlin/service/source/BundleTextSource.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jvmMain/kotlin/service/source/BundleTextSource.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iosMain/kotlin/service/source/BundleTextSource.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="e#24#172#0" expanded="true" />
           </folding>
         </state>
       </provider>

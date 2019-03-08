@@ -7,16 +7,12 @@
 //
 
 @testable import Rabobank
+@testable import main
 
 class TextParserMock: TextParser {
     var textToParse: String?
-    var rowsToReturn: [Row]!
-    var error: Error?
-    func parse(text: String) throws -> [Row] {
-        if let error = error  {
-            throw error
-        }
-        
+    var rowsToReturn: [[String]]!
+    func parse(text: String)-> [[String]]? {
         textToParse = text
         return rowsToReturn
         

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6DD430D00D89810F86C506FA /* libPods-Rabobank-Tests-RabobankTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67312B970D0F4AD8EBBE7D6E /* libPods-Rabobank-Tests-RabobankTests.a */; };
-		BC386947222814A4006A1808 /* PersonsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC386946222814A4006A1808 /* PersonsFactory.swift */; };
-		BC38694C2228177B006A1808 /* DefaultPersonsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38694B2228177A006A1808 /* DefaultPersonsFactory.swift */; };
 		BC38694E222818B7006A1808 /* PersonsFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38694D222818B7006A1808 /* PersonsFactoryTests.swift */; };
 		BC386950222827BC006A1808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38694F222827BC006A1808 /* AppDelegate.swift */; };
 		BC573A632220446E00093E94 /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A622220446E00093E94 /* ListAssembly.swift */; };
@@ -86,8 +84,6 @@
 		59AE56651FAAB9C14F53BA5E /* Pods-Rabobank-Tests-RabobankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabobank-Tests-RabobankTests.release.xcconfig"; path = "Target Support Files/Pods-Rabobank-Tests-RabobankTests/Pods-Rabobank-Tests-RabobankTests.release.xcconfig"; sourceTree = "<group>"; };
 		64481BDAC24364557CCB792A /* Pods_RabobankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RabobankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67312B970D0F4AD8EBBE7D6E /* libPods-Rabobank-Tests-RabobankTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rabobank-Tests-RabobankTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC386946222814A4006A1808 /* PersonsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsFactory.swift; sourceTree = "<group>"; };
-		BC38694B2228177A006A1808 /* DefaultPersonsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPersonsFactory.swift; sourceTree = "<group>"; };
 		BC38694D222818B7006A1808 /* PersonsFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsFactoryTests.swift; sourceTree = "<group>"; };
 		BC38694F222827BC006A1808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC573A622220446E00093E94 /* ListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAssembly.swift; sourceTree = "<group>"; };
@@ -159,15 +155,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		BC38694822281629006A1808 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				BC386946222814A4006A1808 /* PersonsFactory.swift */,
-				BC38694B2228177A006A1808 /* DefaultPersonsFactory.swift */,
-			);
-			path = Factory;
-			sourceTree = "<group>";
-		};
 		BC573A65222045E700093E94 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,7 +220,6 @@
 		BC573A882222842800093E94 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				BC38694822281629006A1808 /* Factory */,
 				BC573A8E222284E900093E94 /* Source */,
 			);
 			path = Services;
@@ -543,7 +529,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC573B192224090800093E94 /* ListError.swift in Sources */,
-				BC386947222814A4006A1808 /* PersonsFactory.swift in Sources */,
 				BC573A902222850A00093E94 /* TextSource.swift in Sources */,
 				BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */,
 				BC573A8A2222846400093E94 /* ListDataSource.swift in Sources */,
@@ -553,7 +538,6 @@
 				BC573A8C222284AC00093E94 /* DefaultListDataSource.swift in Sources */,
 				BC573A7522204AF300093E94 /* ListTableViewCell.swift in Sources */,
 				BC573A812220543300093E94 /* ListPresenter.swift in Sources */,
-				BC38694C2228177B006A1808 /* DefaultPersonsFactory.swift in Sources */,
 				BC573A7922204BA900093E94 /* ListView.swift in Sources */,
 				BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */,
 				BC386950222827BC006A1808 /* AppDelegate.swift in Sources */,

@@ -2,25 +2,22 @@ package service.date
 
 import platform.Foundation.NSDate
 import platform.Foundation.NSDateFormatter
+import platform.Foundation.NSTimeZone
+import platform.Foundation.timeZoneForSecondsFromGMT
 
 actual typealias Date = NSDate
 actual typealias DateFormatter = KotlinDateFormatter
 
+class KotlinDateFormatter(format: String): NSDateFormatter() {
 
-class KotlinDateFormatter: NSDateFormatter() {
-    companion object {
-        val shared: DateFormatter
-            get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
-    }
-
-    fun configure(format: String) {
+    init {
+        dateFormat = format
+        timeZone = NSTimeZone.timeZoneForSecondsFromGMT(0)
     }
 
     fun date(fromString: String): Date? {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return dateFromString(fromString)
     }
 
-    fun string(fromDate: Date): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+    fun string(fromDate: Date): String = stringFromDate(fromDate)
 }

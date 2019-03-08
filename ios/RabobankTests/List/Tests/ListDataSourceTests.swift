@@ -10,6 +10,7 @@ import Nimble
 import Quick
 
 @testable import Rabobank
+@testable import main
 
 class ListDataSourceTests: QuickSpec {
     override func spec() {
@@ -71,10 +72,8 @@ class ListDataSourceTests: QuickSpec {
                 }
                 
                 context("not able to parse") {
-                    let error = EmptyError()
                     beforeEach {
                         source.textToReturn = text
-                        parser.error = error
                         dataSource.fetch()
                     }
                     

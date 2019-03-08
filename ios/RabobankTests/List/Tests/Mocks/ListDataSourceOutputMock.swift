@@ -7,6 +7,7 @@
 //
 
 @testable import Rabobank
+@testable import main
 
 class ListDataSourceOutputMock: ListDataSourceOutput {
     var items: [Person]?

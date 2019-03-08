@@ -10,6 +10,7 @@ import Nimble
 import Quick
 
 @testable import Rabobank
+@testable import main
 
 class PersonsFactoryTests: QuickSpec {
 

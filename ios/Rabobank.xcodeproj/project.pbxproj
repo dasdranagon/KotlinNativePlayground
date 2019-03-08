@@ -41,8 +41,8 @@
 		BC573B1B2224263D00093E94 /* issues.csv in Resources */ = {isa = PBXBuildFile; fileRef = BC573B1A2224263D00093E94 /* issues.csv */; };
 		BC98EFF222202DD400607734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF122202DD400607734 /* Assets.xcassets */; };
 		BC98EFF522202DD400607734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF322202DD400607734 /* LaunchScreen.storyboard */; };
-		BC9990D3222FE5E600D00BB6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9990CC222FE5E600D00BB6 /* Common.framework */; };
-		BC9990D4222FE5E600D00BB6 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC9990CC222FE5E600D00BB6 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BC9990D3222FE5E600D00BB6 /* main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9990CC222FE5E600D00BB6 /* main.framework */; };
+		BC9990D4222FE5E600D00BB6 /* main.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC9990CC222FE5E600D00BB6 /* main.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBBB3498ABCCAF8FC3DE0807 /* libPods-Rabobank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 490EA4A4640BD0E7D23808B7 /* libPods-Rabobank.a */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +70,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BC9990D4222FE5E600D00BB6 /* Common.framework in Embed Frameworks */,
+				BC9990D4222FE5E600D00BB6 /* main.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,7 +124,7 @@
 		BC98EFF122202DD400607734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC98EFF422202DD400607734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC98EFF622202DD400607734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC9990CC222FE5E600D00BB6 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC9990CC222FE5E600D00BB6 /* main.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = main.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBBB3498ABCCAF8FC3DE0807 /* libPods-Rabobank.a in Frameworks */,
-				BC9990D3222FE5E600D00BB6 /* Common.framework in Frameworks */,
+				BC9990D3222FE5E600D00BB6 /* main.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +314,7 @@
 			children = (
 				BC98EFE722202DD300607734 /* Rabobank.app */,
 				BC573AF9222364E800093E94 /* RabobankTests.xctest */,
-				BC9990CC222FE5E600D00BB6 /* Common.framework */,
+				BC9990CC222FE5E600D00BB6 /* main.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -387,9 +387,9 @@
 			productReference = BC98EFE722202DD300607734 /* Rabobank.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BC9990CB222FE5E600D00BB6 /* Common */ = {
+		BC9990CB222FE5E600D00BB6 /* main */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC9990D7222FE5E600D00BB6 /* Build configuration list for PBXNativeTarget "Common" */;
+			buildConfigurationList = BC9990D7222FE5E600D00BB6 /* Build configuration list for PBXNativeTarget "main" */;
 			buildPhases = (
 				BC9990D9222FE68700D00BB6 /* ShellScript */,
 			);
@@ -397,9 +397,9 @@
 			);
 			dependencies = (
 			);
-			name = Common;
+			name = main;
 			productName = Common;
-			productReference = BC9990CC222FE5E600D00BB6 /* Common.framework */;
+			productReference = BC9990CC222FE5E600D00BB6 /* main.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -439,7 +439,7 @@
 			targets = (
 				BC98EFE622202DD300607734 /* Rabobank */,
 				BC573AF8222364E800093E94 /* RabobankTests */,
-				BC9990CB222FE5E600D00BB6 /* Common */,
+				BC9990CB222FE5E600D00BB6 /* main */,
 			);
 		};
 /* End PBXProject section */
@@ -583,7 +583,7 @@
 		};
 		BC9990D2222FE5E600D00BB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BC9990CB222FE5E600D00BB6 /* Common */;
+			target = BC9990CB222FE5E600D00BB6 /* main */;
 			targetProxy = BC9990D1222FE5E600D00BB6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -889,7 +889,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC9990D7222FE5E600D00BB6 /* Build configuration list for PBXNativeTarget "Common" */ = {
+		BC9990D7222FE5E600D00BB6 /* Build configuration list for PBXNativeTarget "main" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC9990D5222FE5E600D00BB6 /* Debug */,

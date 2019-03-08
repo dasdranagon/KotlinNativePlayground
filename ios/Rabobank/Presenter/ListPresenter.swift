@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Common
+import main
 
 class ListPresenter {
     weak var view: ListView!

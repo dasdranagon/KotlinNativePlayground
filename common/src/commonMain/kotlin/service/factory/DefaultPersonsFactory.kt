@@ -2,7 +2,7 @@ package service.factory
 
 import entities.Person
 
-class DefaultPersonsFactory: PersonsFactory {
+abstract class DefaultPersonsFactory: PersonsFactory {
     internal enum class Columns {
         FIRST_NAME,
         SURNAME,
@@ -12,10 +12,10 @@ class DefaultPersonsFactory: PersonsFactory {
     override fun create(row: PersonsFactoryRow): Person? {
         if (Columns.values().count() >= row.count()) return null
 
-        val firstName = row[Columns.FIRST_NAME.ordinal]
-        val surname = row[Columns.SURNAME.ordinal]
-        val issueCount = row[Columns.ISSUE_COUNT.ordinal].toIntOrNull() ?: return null
-        val birthday = row[Columns.BIRTHDAY.ordinal]
+//        val firstName = row[Columns.FIRST_NAME.ordinal]
+//        val surname = row[Columns.SURNAME.ordinal]
+//        val issueCount = row[Columns.ISSUE_COUNT.ordinal].toIntOrNull() ?: return null
+//        val birthday = row[Columns.BIRTHDAY.ordinal]
 
         return null
     }

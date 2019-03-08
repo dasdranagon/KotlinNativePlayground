@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6DD430D00D89810F86C506FA /* libPods-Rabobank-Tests-RabobankTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67312B970D0F4AD8EBBE7D6E /* libPods-Rabobank-Tests-RabobankTests.a */; };
-		BC386947222814A4006A1808 /* PersonsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC386946222814A4006A1808 /* PersonsFactory.swift */; };
-		BC38694C2228177B006A1808 /* DefaultPersonsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38694B2228177A006A1808 /* DefaultPersonsFactory.swift */; };
 		BC38694E222818B7006A1808 /* PersonsFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38694D222818B7006A1808 /* PersonsFactoryTests.swift */; };
 		BC386950222827BC006A1808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38694F222827BC006A1808 /* AppDelegate.swift */; };
 		BC573A632220446E00093E94 /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A622220446E00093E94 /* ListAssembly.swift */; };
@@ -20,7 +18,6 @@
 		BC573A7B22204BDF00093E94 /* ListDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */; };
 		BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7E222053A500093E94 /* ListEventsHandler.swift */; };
 		BC573A812220543300093E94 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A802220543300093E94 /* ListPresenter.swift */; };
-		BC573A842221DB6200093E94 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A832221DB6200093E94 /* Person.swift */; };
 		BC573A8A2222846400093E94 /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A892222846400093E94 /* ListDataSource.swift */; };
 		BC573A8C222284AC00093E94 /* DefaultListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A8B222284AC00093E94 /* DefaultListDataSource.swift */; };
 		BC573A902222850A00093E94 /* TextSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A8F2222850A00093E94 /* TextSource.swift */; };
@@ -41,8 +38,8 @@
 		BC573B1B2224263D00093E94 /* issues.csv in Resources */ = {isa = PBXBuildFile; fileRef = BC573B1A2224263D00093E94 /* issues.csv */; };
 		BC98EFF222202DD400607734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF122202DD400607734 /* Assets.xcassets */; };
 		BC98EFF522202DD400607734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF322202DD400607734 /* LaunchScreen.storyboard */; };
-		BC9990D3222FE5E600D00BB6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9990CC222FE5E600D00BB6 /* Common.framework */; };
-		BC9990D4222FE5E600D00BB6 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC9990CC222FE5E600D00BB6 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BC9990D3222FE5E600D00BB6 /* main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9990CC222FE5E600D00BB6 /* main.framework */; };
+		BC9990D4222FE5E600D00BB6 /* main.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC9990CC222FE5E600D00BB6 /* main.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBBB3498ABCCAF8FC3DE0807 /* libPods-Rabobank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 490EA4A4640BD0E7D23808B7 /* libPods-Rabobank.a */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +67,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BC9990D4222FE5E600D00BB6 /* Common.framework in Embed Frameworks */,
+				BC9990D4222FE5E600D00BB6 /* main.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,8 +84,6 @@
 		59AE56651FAAB9C14F53BA5E /* Pods-Rabobank-Tests-RabobankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabobank-Tests-RabobankTests.release.xcconfig"; path = "Target Support Files/Pods-Rabobank-Tests-RabobankTests/Pods-Rabobank-Tests-RabobankTests.release.xcconfig"; sourceTree = "<group>"; };
 		64481BDAC24364557CCB792A /* Pods_RabobankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RabobankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67312B970D0F4AD8EBBE7D6E /* libPods-Rabobank-Tests-RabobankTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rabobank-Tests-RabobankTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC386946222814A4006A1808 /* PersonsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsFactory.swift; sourceTree = "<group>"; };
-		BC38694B2228177A006A1808 /* DefaultPersonsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPersonsFactory.swift; sourceTree = "<group>"; };
 		BC38694D222818B7006A1808 /* PersonsFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsFactoryTests.swift; sourceTree = "<group>"; };
 		BC38694F222827BC006A1808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC573A622220446E00093E94 /* ListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAssembly.swift; sourceTree = "<group>"; };
@@ -99,7 +94,6 @@
 		BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDisplayItem.swift; sourceTree = "<group>"; };
 		BC573A7E222053A500093E94 /* ListEventsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsHandler.swift; sourceTree = "<group>"; };
 		BC573A802220543300093E94 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
-		BC573A832221DB6200093E94 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		BC573A892222846400093E94 /* ListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
 		BC573A8B222284AC00093E94 /* DefaultListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultListDataSource.swift; sourceTree = "<group>"; };
 		BC573A8F2222850A00093E94 /* TextSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSource.swift; sourceTree = "<group>"; };
@@ -124,7 +118,7 @@
 		BC98EFF122202DD400607734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC98EFF422202DD400607734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC98EFF622202DD400607734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC9990CC222FE5E600D00BB6 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC9990CC222FE5E600D00BB6 /* main.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = main.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBBB3498ABCCAF8FC3DE0807 /* libPods-Rabobank.a in Frameworks */,
-				BC9990D3222FE5E600D00BB6 /* Common.framework in Frameworks */,
+				BC9990D3222FE5E600D00BB6 /* main.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,20 +155,10 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		BC38694822281629006A1808 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				BC386946222814A4006A1808 /* PersonsFactory.swift */,
-				BC38694B2228177A006A1808 /* DefaultPersonsFactory.swift */,
-			);
-			path = Factory;
-			sourceTree = "<group>";
-		};
 		BC573A65222045E700093E94 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				BC573A9522228B3500093E94 /* ErrorHandling */,
-				BC573A822221DB4A00093E94 /* Enities */,
 				BC573A882222842800093E94 /* Services */,
 				BC573A87222283E500093E94 /* DataSource */,
 			);
@@ -223,14 +207,6 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		BC573A822221DB4A00093E94 /* Enities */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A832221DB6200093E94 /* Person.swift */,
-			);
-			path = Enities;
-			sourceTree = "<group>";
-		};
 		BC573A87222283E500093E94 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,7 +220,6 @@
 		BC573A882222842800093E94 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				BC38694822281629006A1808 /* Factory */,
 				BC573A8E222284E900093E94 /* Source */,
 			);
 			path = Services;
@@ -314,7 +289,7 @@
 			children = (
 				BC98EFE722202DD300607734 /* Rabobank.app */,
 				BC573AF9222364E800093E94 /* RabobankTests.xctest */,
-				BC9990CC222FE5E600D00BB6 /* Common.framework */,
+				BC9990CC222FE5E600D00BB6 /* main.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -387,9 +362,9 @@
 			productReference = BC98EFE722202DD300607734 /* Rabobank.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BC9990CB222FE5E600D00BB6 /* Common */ = {
+		BC9990CB222FE5E600D00BB6 /* main */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC9990D7222FE5E600D00BB6 /* Build configuration list for PBXNativeTarget "Common" */;
+			buildConfigurationList = BC9990D7222FE5E600D00BB6 /* Build configuration list for PBXNativeTarget "main" */;
 			buildPhases = (
 				BC9990D9222FE68700D00BB6 /* ShellScript */,
 			);
@@ -397,9 +372,9 @@
 			);
 			dependencies = (
 			);
-			name = Common;
+			name = main;
 			productName = Common;
-			productReference = BC9990CC222FE5E600D00BB6 /* Common.framework */;
+			productReference = BC9990CC222FE5E600D00BB6 /* main.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -439,7 +414,7 @@
 			targets = (
 				BC98EFE622202DD300607734 /* Rabobank */,
 				BC573AF8222364E800093E94 /* RabobankTests */,
-				BC9990CB222FE5E600D00BB6 /* Common */,
+				BC9990CB222FE5E600D00BB6 /* main */,
 			);
 		};
 /* End PBXProject section */
@@ -554,18 +529,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC573B192224090800093E94 /* ListError.swift in Sources */,
-				BC386947222814A4006A1808 /* PersonsFactory.swift in Sources */,
 				BC573A902222850A00093E94 /* TextSource.swift in Sources */,
 				BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */,
 				BC573A8A2222846400093E94 /* ListDataSource.swift in Sources */,
-				BC573A842221DB6200093E94 /* Person.swift in Sources */,
 				BC573A92222285E400093E94 /* BundleTextSource.swift in Sources */,
 				BC573A7722204B5400093E94 /* ListTableViewController.swift in Sources */,
 				BC573A7B22204BDF00093E94 /* ListDisplayItem.swift in Sources */,
 				BC573A8C222284AC00093E94 /* DefaultListDataSource.swift in Sources */,
 				BC573A7522204AF300093E94 /* ListTableViewCell.swift in Sources */,
 				BC573A812220543300093E94 /* ListPresenter.swift in Sources */,
-				BC38694C2228177B006A1808 /* DefaultPersonsFactory.swift in Sources */,
 				BC573A7922204BA900093E94 /* ListView.swift in Sources */,
 				BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */,
 				BC386950222827BC006A1808 /* AppDelegate.swift in Sources */,
@@ -583,7 +555,7 @@
 		};
 		BC9990D2222FE5E600D00BB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BC9990CB222FE5E600D00BB6 /* Common */;
+			target = BC9990CB222FE5E600D00BB6 /* main */;
 			targetProxy = BC9990D1222FE5E600D00BB6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -889,7 +861,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC9990D7222FE5E600D00BB6 /* Build configuration list for PBXNativeTarget "Common" */ = {
+		BC9990D7222FE5E600D00BB6 /* Build configuration list for PBXNativeTarget "main" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC9990D5222FE5E600D00BB6 /* Debug */,

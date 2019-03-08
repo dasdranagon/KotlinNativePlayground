@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Common
+import main
 
 class DefaultListDataSource: ListDataSource {
     private let source: TextSource

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Common
+import main
 
 class ListAssembly {
     let presenter: ListPresenter

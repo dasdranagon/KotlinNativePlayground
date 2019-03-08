@@ -10,13 +10,15 @@ repositories {
 kotlin {
     targets {
         fromPreset(getIOSPreset(), 'ios') {
-            compilations.create("Common") {
-                outputKinds('FRAMEWORK')
-                defaultSourceSet {
-                    dependsOn compilations.main.defaultSourceSet
-                }
+            compilations.main {
+                outputKinds 'FRAMEWORK'
+//                extraOpts '-module-name', rootProject.name
 
             }
+
+//            binaries {
+//                framework('Common')
+//            }
         }
 
         fromPreset(presets.jvm, 'jvm')
@@ -35,7 +37,7 @@ kotlin {
                 implementation kotlin('test-annotations-common')
             }
         }
-        
+
         jvmMain {
             dependencies {
                 implementation kotlin('stdlib')
@@ -43,7 +45,7 @@ kotlin {
         }
 
         jvmTest {
-            
+
         }
     }
 }
@@ -58,23 +60,37 @@ task buildFramework {
             throw new Exception("Please run 'buildFramework' task with all necessary properties!")
         }
 
-        println("from: ${kotlin.targets.ios.compilations.Common.getBinary('FRAMEWORK', getXcodeConfiguration()).parentFile}")
+        println("from: ${kotlin.targets.ios.compilations.main.getBinary('FRAMEWORK', getXcodeConfiguration()).parentFile}")
         println("into: ${getXcodeFrameworkLocation()}")
 
-        File frameworkDir = kotlin.targets.ios.compilations.Common.getBinary('FRAMEWORK', getXcodeConfiguration())
+        File frameworkDir = kotlin.targets.ios.compilations.main.getBinary('FRAMEWORK', getXcodeConfiguration())
 
         copy {
             from frameworkDir.parentFile
             into getXcodeFrameworkLocation()
             include "${frameworkDir.name}/**"
             include "${frameworkDir.name}.dSYM/**"
+//            rename   'main', 'Common'
         }
     }
 }
 
+//task copyFramework {
+//    doLast {
+//        copy {
+//            from frameworkDir.parentFile
+//            into getXcodeFrameworkLocation()
+//            include "${frameworkDir.name}/**"
+//            include "${frameworkDir.name}.dSYM/**"
+//            rename   'main', 'Common'
+//        }
+//    }
+//}
+//copyFramework.mustRunAfter buildFramework
+
 afterEvaluate {
     if (isCalledFromXcode()) {
-        buildFramework.dependsOn kotlin.targets.ios.compilations.Common.linkTaskName('FRAMEWORK', getXcodeConfiguration())
+        buildFramework.dependsOn kotlin.targets.ios.compilations.main.linkTaskName('FRAMEWORK', getXcodeConfiguration())
     }
 }
 

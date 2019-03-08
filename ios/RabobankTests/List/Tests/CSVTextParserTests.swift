@@ -10,6 +10,7 @@ import Nimble
 import Quick
 
 @testable import Rabobank
+@testable import main
 
 class CSVTextParserTests: QuickSpec {
     override func spec() {
@@ -20,8 +21,8 @@ class CSVTextParserTests: QuickSpec {
         }
         
         describe("parse") {
+            var parsingResult: [[String]]?
             context("valid text source") {
-                 var parsingResult: [CSVTextParser.Row]?
                 
                 let text = """
 "First name","Sur name","Issue count","Date of birth"
@@ -29,14 +30,14 @@ class CSVTextParserTests: QuickSpec {
 "Fiona","de Vries",7,"1950-11-12T00:00:00"
 "Petra","Boersma",1,"2001-04-20T00:00:00"
 """
-                let expectedParsingResult: [CSVTextParser.Row] = [
+                let expectedParsingResult: [[String]] = [
                     ["\"First name\"","\"Sur name\"","\"Issue count\"","\"Date of birth\""],
                     ["\"Theo\"","\"Jansen\"","5","\"1978-01-02T00:00:00\""],
                     ["\"Fiona\"","\"de Vries\"","7","\"1950-11-12T00:00:00\""],
                     ["\"Petra\"","\"Boersma\"","1","\"2001-04-20T00:00:00\""]]
                 
                 beforeEach {
-                    parsingResult = try? parser.parse(text: text)
+                    parsingResult = parser.parse(text: text)
                 }
                 
                 it("parses text") {
@@ -45,17 +46,12 @@ class CSVTextParserTests: QuickSpec {
             }
             
             context("invalid text source") {
-                var parsingError: Error?
                 beforeEach {
-                    do {
-                        _ = try parser.parse(text: "")
-                    } catch {
-                        parsingError = error
-                    }
+                    parsingResult = parser.parse(text: "")
                 }
                 
-                it("throws a parsing error") {
-                    expect(parsingError).notTo(beNil())
+                it("returns nil") {
+                    expect(parsingResult).to(beNil())
                 }
             }
         }

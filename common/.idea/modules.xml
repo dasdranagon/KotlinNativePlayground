@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Common.iml" filepath="$PROJECT_DIR$/.idea/modules/Common.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Common.commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/Common.commonMain.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Common.commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/Common.commonTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Common.iosCommon.iml" filepath="$PROJECT_DIR$/.idea/modules/Common.iosCommon.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Common.iosMain.iml" filepath="$PROJECT_DIR$/.idea/modules/Common.iosMain.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Common.iosTest.iml" filepath="$PROJECT_DIR$/.idea/modules/Common.iosTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Common.jvmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/Common.jvmMain.iml" />

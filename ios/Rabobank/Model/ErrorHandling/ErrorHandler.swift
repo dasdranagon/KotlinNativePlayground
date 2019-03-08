@@ -7,13 +7,10 @@
 //
 
 import UIKit
+import main
 
-protocol ErrorHandler: AnyObject {
-    func proceed(error: Error)
-}
-
-extension ErrorHandler where Self: UIViewController {
-    func proceed(error: Error) {
+extension UIViewController: ErrorHandler {
+    public func proceed(error: Error) {
         let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)

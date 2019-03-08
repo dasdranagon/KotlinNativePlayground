@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import main
 
 class ListTableViewController: UITableViewController {
     enum Constants {
@@ -70,5 +71,3 @@ extension ListTableViewController: ListView {
         }
     }
 }
-
-extension ListTableViewController: ErrorHandler {}

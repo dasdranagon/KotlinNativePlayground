@@ -26,10 +26,11 @@ class DefaultListDataSource: ListDataSource {
         source.fetch { [weak self] text in
             guard let text = text else {
                 self?.proceed(error: .dataAccessError)
-                return
+                return KotlinUnit()
             }
             
             self?.process(text: text)
+            return KotlinUnit()
         }
     }
 }

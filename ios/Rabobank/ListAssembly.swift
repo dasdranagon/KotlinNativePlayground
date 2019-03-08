@@ -14,7 +14,7 @@ class ListAssembly {
     let dataSource: DefaultListDataSource
     
     init() {
-        let source = BundleTextSource(resource: "issues", ofType: "csv")
+        let source = BundleTextSource(resource: "issues")
         let parser = CSVTextParser()
         
         dataSource = DefaultListDataSource(source: source, parser: parser)

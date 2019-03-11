@@ -22,7 +22,7 @@ extension ListAssembly {
     }
     
     private func initialControllerFromStoryboard() -> UIViewController {
-        let bundle = Bundle(for: type(of: self))
+        let bundle = Bundle.main
         let storyboard = UIStoryboard(name: "List", bundle: bundle)
         return storyboard.instantiateInitialViewController()!
     }

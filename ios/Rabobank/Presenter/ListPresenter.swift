@@ -55,7 +55,18 @@ extension ListPresenter: ListEventsHandler {
         loadingLock.lock { [weak self] in
             self?.view.processing(show: true)
             self?.dataSource.fetch { response in
-                return KotlinUnit()
+                switch response {
+                case let response as Response.Success:
+                    self?.update(items: response.list)
+                    return KotlinUnit()
+                    
+                case let response as Response.Fail:
+                    print("fail \(response.error)")
+                    return KotlinUnit()
+                    
+                default:
+                    return KotlinUnit()
+                }
             }
             return KotlinUnit()
         }

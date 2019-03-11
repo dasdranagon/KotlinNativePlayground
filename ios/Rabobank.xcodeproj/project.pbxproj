@@ -89,8 +89,6 @@
 		BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDisplayItem.swift; sourceTree = "<group>"; };
 		BC573A7E222053A500093E94 /* ListEventsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsHandler.swift; sourceTree = "<group>"; };
 		BC573A802220543300093E94 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
-		BC573A892222846400093E94 /* ListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
-		BC573A8B222284AC00093E94 /* DefaultListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultListDataSource.swift; sourceTree = "<group>"; };
 		BC573A9622228B5600093E94 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsHandlerTests.swift; sourceTree = "<group>"; };
 		BC573A9D222292EA00093E94 /* ListDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSourceMock.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 		BC573B0F2223ED9600093E94 /* ErrorHandlerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlerMock.swift; sourceTree = "<group>"; };
 		BC573B112223F63E00093E94 /* EmptyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyError.swift; sourceTree = "<group>"; };
 		BC573B142223FF2B00093E94 /* CSVTextParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVTextParserTests.swift; sourceTree = "<group>"; };
-		BC573B182224090800093E94 /* ListError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListError.swift; sourceTree = "<group>"; };
 		BC573B1A2224263D00093E94 /* issues.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = issues.csv; sourceTree = "<group>"; };
 		BC98EFE722202DD300607734 /* Rabobank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rabobank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC98EFF122202DD400607734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				BC573A9522228B3500093E94 /* ErrorHandling */,
-				BC573A87222283E500093E94 /* DataSource */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,16 +193,6 @@
 				BC573A7422204AF300093E94 /* ListTableViewCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		BC573A87222283E500093E94 /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A892222846400093E94 /* ListDataSource.swift */,
-				BC573A8B222284AC00093E94 /* DefaultListDataSource.swift */,
-				BC573B182224090800093E94 /* ListError.swift */,
-			);
-			path = DataSource;
 			sourceTree = "<group>";
 		};
 		BC573A9522228B3500093E94 /* ErrorHandling */ = {

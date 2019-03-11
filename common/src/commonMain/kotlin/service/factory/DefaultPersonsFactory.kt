@@ -1,6 +1,6 @@
 package service.factory
 
-import entities.Person
+import model.entities.Person
 import service.date.Date
 import service.date.DateFormatter
 

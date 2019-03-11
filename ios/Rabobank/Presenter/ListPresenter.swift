@@ -23,7 +23,7 @@ class ListPresenter {
     }()
 }
 
-extension ListPresenter: ListDataSourceOutput {
+extension ListPresenter { //: ListDataSourceOutput {
     func update(items: [Person]) {
         let displayItems = items.compactMap { [weak self] in self?.displayItem(for: $0) }
         view.update(items: displayItems)
@@ -54,7 +54,20 @@ extension ListPresenter: ListEventsHandler {
     private func load() {
         loadingLock.lock { [weak self] in
             self?.view.processing(show: true)
-            self?.dataSource.fetch()
+            self?.dataSource.fetch { response in
+                switch response {
+                case let response as Response.Success:
+                    self?.update(items: response.list)
+                    return KotlinUnit()
+                    
+                case let response as Response.Fail:
+                    print("fail \(response.error)")
+                    return KotlinUnit()
+                    
+                default:
+                    return KotlinUnit()
+                }
+            }
             return KotlinUnit()
         }
     }

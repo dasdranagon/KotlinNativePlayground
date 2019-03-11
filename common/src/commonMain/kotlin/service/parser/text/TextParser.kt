@@ -1,4 +1,4 @@
-package parser.text
+package service.parser.text
 
 typealias TextParserRow = List<String>
 

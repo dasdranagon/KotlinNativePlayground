@@ -14,10 +14,6 @@
 		BC573A6C2220468300093E94 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC573A6B2220468300093E94 /* List.storyboard */; };
 		BC573A7522204AF300093E94 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7422204AF300093E94 /* ListTableViewCell.swift */; };
 		BC573A7722204B5400093E94 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7622204B5400093E94 /* ListTableViewController.swift */; };
-		BC573A7922204BA900093E94 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7822204BA900093E94 /* ListView.swift */; };
-		BC573A7B22204BDF00093E94 /* ListDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */; };
-		BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7E222053A500093E94 /* ListEventsHandler.swift */; };
-		BC573A812220543300093E94 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A802220543300093E94 /* ListPresenter.swift */; };
 		BC573B032223658400093E94 /* ListDataSourceOutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573AA12222A15B00093E94 /* ListDataSourceOutputTests.swift */; };
 		BC573B042223676800093E94 /* ListEventsHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */; };
 		BC573B052223676F00093E94 /* ListDataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9D222292EA00093E94 /* ListDataSourceMock.swift */; };
@@ -85,10 +81,6 @@
 		BC573A6B2220468300093E94 /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		BC573A7422204AF300093E94 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		BC573A7622204B5400093E94 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
-		BC573A7822204BA900093E94 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDisplayItem.swift; sourceTree = "<group>"; };
-		BC573A7E222053A500093E94 /* ListEventsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsHandler.swift; sourceTree = "<group>"; };
-		BC573A802220543300093E94 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		BC573A9622228B5600093E94 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsHandlerTests.swift; sourceTree = "<group>"; };
 		BC573A9D222292EA00093E94 /* ListDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSourceMock.swift; sourceTree = "<group>"; };
@@ -145,14 +137,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		BC573A65222045E700093E94 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A9522228B3500093E94 /* ErrorHandling */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		BC573A66222045F400093E94 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,20 +155,9 @@
 			children = (
 				BC573A7322204AAC00093E94 /* Cells */,
 				BC573A7622204B5400093E94 /* ListTableViewController.swift */,
-				BC573A7822204BA900093E94 /* ListView.swift */,
 				BC573A6B2220468300093E94 /* List.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		BC573A692220466100093E94 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */,
-				BC573A7E222053A500093E94 /* ListEventsHandler.swift */,
-				BC573A802220543300093E94 /* ListPresenter.swift */,
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		BC573A7322204AAC00093E94 /* Cells */ = {
@@ -193,14 +166,6 @@
 				BC573A7422204AF300093E94 /* ListTableViewCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		BC573A9522228B3500093E94 /* ErrorHandling */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A9622228B5600093E94 /* ErrorHandler.swift */,
-			);
-			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
 		BC573A9A222290C100093E94 /* Mocks */ = {
@@ -260,9 +225,8 @@
 			children = (
 				BC38694F222827BC006A1808 /* AppDelegate.swift */,
 				BC573A622220446E00093E94 /* ListAssembly.swift */,
-				BC573A65222045E700093E94 /* Model */,
+				BC573A9622228B5600093E94 /* ErrorHandler.swift */,
 				BC573A682220465700093E94 /* View */,
-				BC573A692220466100093E94 /* Presenter */,
 				BC98EFF122202DD400607734 /* Assets.xcassets */,
 				BC573B1A2224263D00093E94 /* issues.csv */,
 				BC98EFF322202DD400607734 /* LaunchScreen.storyboard */,
@@ -489,12 +453,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */,
 				BC573A7722204B5400093E94 /* ListTableViewController.swift in Sources */,
-				BC573A7B22204BDF00093E94 /* ListDisplayItem.swift in Sources */,
 				BC573A7522204AF300093E94 /* ListTableViewCell.swift in Sources */,
-				BC573A812220543300093E94 /* ListPresenter.swift in Sources */,
-				BC573A7922204BA900093E94 /* ListView.swift in Sources */,
 				BC74DE6F22367C6600764058 /* ErrorHandler.swift in Sources */,
 				BC386950222827BC006A1808 /* AppDelegate.swift in Sources */,
 				BC573A632220446E00093E94 /* ListAssembly.swift in Sources */,

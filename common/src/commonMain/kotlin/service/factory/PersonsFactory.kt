@@ -1,6 +1,6 @@
 package service.factory
 
-import entities.Person
+import model.entities.Person
 
 typealias PersonsFactoryRow = List<String>
 interface PersonsFactory {

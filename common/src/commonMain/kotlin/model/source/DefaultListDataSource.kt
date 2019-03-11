@@ -5,12 +5,13 @@ import service.errors.ErrorHandler
 import service.factory.DefaultPersonsFactory
 import service.factory.PersonsFactory
 import service.parser.text.TextParser
+import service.parser.text.TextParserRow
 import service.source.TextSource
 
 class DefaultListDataSource(
         val source: TextSource,
         val parser: TextParser,
-        val factory: PersonsFactory = DefaultPersonsFactory()) :ListDataSource {
+        val factory: PersonsFactory) :ListDataSource {
 
     var errorHandler: ErrorHandler? = null
 
@@ -27,8 +28,19 @@ class DefaultListDataSource(
         }
     }
 
+    // process
     private fun process(text: String) {
+        parser.parse(text)?.apply {
+            process(this)
+        }
+    }
 
+    private fun process(rows: List<TextParserRow>) {
+        rows.drop(0).mapNotNull {
+            factory.create(it)
+        }.apply {
+            proceed(this)
+        }
     }
 
     // proceed
@@ -41,45 +53,3 @@ class DefaultListDataSource(
     }
 
 }
-
-/**
-
-    func fetch() {
-        source.fetch { [weak self] text in
-            guard let text = text else {
-                self?.proceed(error: .dataAccessError)
-                return KotlinUnit()
-            }
-
-            self?.process(text: text)
-            return KotlinUnit()
-        }
-    }
-}
-
-extension DefaultListDataSource {
-
-    func process(text: String) {
-        /// Kotlin native code is thread local
-//        DispatchQueue.global(qos: .utility).async { [weak self] in
-        guard let rows = parser.parse(text: text) else {
-        self.proceedInMainThread(error: .unknown)
-        return
-    }
-        process(rows: rows)
-//        }
-    }
-
-    private func process(rows: [[String]] ) {
-        let persons = rows.dropFirst().compactMap { [weak self] row in
-            return self?.factory.create(row: row)
-        }
-
-        DispatchQueue.main.async { [weak self] in
-                self?.proceed(persons: persons)
-        }
-    }
-
-}
-
-*/

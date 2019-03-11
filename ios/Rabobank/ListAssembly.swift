@@ -17,11 +17,12 @@ class ListAssembly {
         let source = BundleTextSource(resource: "issues")
         let parser = CSVTextParser()
         
-        dataSource = DefaultListDataSource(source: source, parser: parser)
+        dataSource = DefaultListDataSource(source: source,
+                                           parser: parser,
+                                           factory: DefaultPersonsFactory())
         
         presenter = ListPresenter()
         presenter.dataSource = dataSource
-        dataSource.output = presenter
     }
 }
 

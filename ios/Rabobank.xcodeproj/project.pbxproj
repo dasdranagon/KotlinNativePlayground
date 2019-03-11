@@ -18,9 +18,6 @@
 		BC573A7B22204BDF00093E94 /* ListDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7A22204BDF00093E94 /* ListDisplayItem.swift */; };
 		BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A7E222053A500093E94 /* ListEventsHandler.swift */; };
 		BC573A812220543300093E94 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A802220543300093E94 /* ListPresenter.swift */; };
-		BC573A8A2222846400093E94 /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A892222846400093E94 /* ListDataSource.swift */; };
-		BC573A8C222284AC00093E94 /* DefaultListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A8B222284AC00093E94 /* DefaultListDataSource.swift */; };
-		BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9622228B5600093E94 /* ErrorHandler.swift */; };
 		BC573B032223658400093E94 /* ListDataSourceOutputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573AA12222A15B00093E94 /* ListDataSourceOutputTests.swift */; };
 		BC573B042223676800093E94 /* ListEventsHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9B2222913000093E94 /* ListEventsHandlerTests.swift */; };
 		BC573B052223676F00093E94 /* ListDataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9D222292EA00093E94 /* ListDataSourceMock.swift */; };
@@ -32,8 +29,8 @@
 		BC573B102223ED9600093E94 /* ErrorHandlerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B0F2223ED9600093E94 /* ErrorHandlerMock.swift */; };
 		BC573B132223F6AB00093E94 /* EmptyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B112223F63E00093E94 /* EmptyError.swift */; };
 		BC573B152223FF2B00093E94 /* CSVTextParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B142223FF2B00093E94 /* CSVTextParserTests.swift */; };
-		BC573B192224090800093E94 /* ListError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573B182224090800093E94 /* ListError.swift */; };
 		BC573B1B2224263D00093E94 /* issues.csv in Resources */ = {isa = PBXBuildFile; fileRef = BC573B1A2224263D00093E94 /* issues.csv */; };
+		BC74DE6F22367C6600764058 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC573A9622228B5600093E94 /* ErrorHandler.swift */; };
 		BC98EFF222202DD400607734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF122202DD400607734 /* Assets.xcassets */; };
 		BC98EFF522202DD400607734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC98EFF322202DD400607734 /* LaunchScreen.storyboard */; };
 		BC9990D3222FE5E600D00BB6 /* main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9990CC222FE5E600D00BB6 /* main.framework */; };
@@ -506,16 +503,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC573B192224090800093E94 /* ListError.swift in Sources */,
 				BC573A7F222053A500093E94 /* ListEventsHandler.swift in Sources */,
-				BC573A8A2222846400093E94 /* ListDataSource.swift in Sources */,
 				BC573A7722204B5400093E94 /* ListTableViewController.swift in Sources */,
 				BC573A7B22204BDF00093E94 /* ListDisplayItem.swift in Sources */,
-				BC573A8C222284AC00093E94 /* DefaultListDataSource.swift in Sources */,
 				BC573A7522204AF300093E94 /* ListTableViewCell.swift in Sources */,
 				BC573A812220543300093E94 /* ListPresenter.swift in Sources */,
 				BC573A7922204BA900093E94 /* ListView.swift in Sources */,
-				BC573A9722228B5600093E94 /* ErrorHandler.swift in Sources */,
+				BC74DE6F22367C6600764058 /* ErrorHandler.swift in Sources */,
 				BC386950222827BC006A1808 /* AppDelegate.swift in Sources */,
 				BC573A632220446E00093E94 /* ListAssembly.swift in Sources */,
 			);

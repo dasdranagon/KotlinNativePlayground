@@ -2,7 +2,6 @@ package model.source
 
 import model.entities.Person
 import service.errors.ErrorHandler
-import service.factory.DefaultPersonsFactory
 import service.factory.PersonsFactory
 import service.parser.text.TextParser
 import service.parser.text.TextParserRow
@@ -28,7 +27,6 @@ class DefaultListDataSource(
         }
     }
 
-    // process
     private fun process(text: String) {
         parser.parse(text)?.apply {
             process(this)
@@ -43,7 +41,6 @@ class DefaultListDataSource(
         }
     }
 
-    // proceed
     private fun proceed(exception: ListException) {
         handler?.run { this(Response.Fail(exception)) }
     }

@@ -7,7 +7,7 @@ import service.async.Lock
 import service.date.DateFormatter
 import view.ListView
 
-class ListPresenter {
+class ListPresenter: ListEventsHandler {
     var view: ListView? = null
     var dataSource: ListDataSource? = null
 
@@ -39,5 +39,13 @@ class ListPresenter {
                 fullName = "${person.firstName} ${person.surname}",
                 dateOfBirth = person.issueCount.toString(),
                 issueCount = dateFormatter.string(person.dateOfBirth))
+    }
+
+    override fun ready() {
+        load()
+    }
+
+    override fun refresh() {
+        load()
     }
 }

@@ -9,24 +9,6 @@
 import UIKit
 import main
 
-class ListAssembly {
-    let presenter: ListPresenter
-    let dataSource: DefaultListDataSource
-    
-    init() {
-        let source = BundleTextSource(resource: "issues")
-        let parser = CSVTextParser()
-        
-        dataSource = DefaultListDataSource(source: source,
-                                           parser: parser,
-                                           factory: DefaultPersonsFactory())
-        
-        presenter = ListPresenter()
-        presenter.dataSource = dataSource
-    }
-}
-
-// MARK: create ViewController
 extension ListAssembly {
     func createViewController() -> UIViewController {
         let viewController = initialControllerFromStoryboard() as! ListTableViewController

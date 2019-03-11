@@ -150,22 +150,15 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		BC573A682220465700093E94 /* View */ = {
+		BC573A682220465700093E94 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				BC573A7322204AAC00093E94 /* Cells */,
+				BC573A622220446E00093E94 /* ListAssembly.swift */,
 				BC573A7622204B5400093E94 /* ListTableViewController.swift */,
+				BC573A7422204AF300093E94 /* ListTableViewCell.swift */,
 				BC573A6B2220468300093E94 /* List.storyboard */,
 			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		BC573A7322204AAC00093E94 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				BC573A7422204AF300093E94 /* ListTableViewCell.swift */,
-			);
-			path = Cells;
+			path = List;
 			sourceTree = "<group>";
 		};
 		BC573A9A222290C100093E94 /* Mocks */ = {
@@ -224,9 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				BC38694F222827BC006A1808 /* AppDelegate.swift */,
-				BC573A622220446E00093E94 /* ListAssembly.swift */,
 				BC573A9622228B5600093E94 /* ErrorHandler.swift */,
-				BC573A682220465700093E94 /* View */,
+				BC573A682220465700093E94 /* List */,
 				BC98EFF122202DD400607734 /* Assets.xcassets */,
 				BC573B1A2224263D00093E94 /* issues.csv */,
 				BC98EFF322202DD400607734 /* LaunchScreen.storyboard */,

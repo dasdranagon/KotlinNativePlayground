@@ -11,7 +11,7 @@ class ListPresenter: ListEventsHandler {
     var view: ListView? = null
     var dataSource: ListDataSource? = null
 
-    private val dateFormatter = DateFormatter("yyyy.MM.dd")
+    private val dateFormatter = DateFormatter("dd.MM.yyyy")
     private val loadingLock = Lock()
 
     fun load() {

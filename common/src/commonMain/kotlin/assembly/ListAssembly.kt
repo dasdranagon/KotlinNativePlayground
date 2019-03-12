@@ -1,3 +1,5 @@
+package assembly
+
 import model.source.DefaultListDataSource
 import presenter.ListPresenter
 import service.factory.DefaultPersonsFactory

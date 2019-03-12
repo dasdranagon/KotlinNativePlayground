@@ -4,9 +4,9 @@
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="Native " useProjectSettings="false" isTestModule="true" externalProjectId=":common">
         <sourceSets>
-          <sourceSet>common_commonTest</sourceSet>
-          <sourceSet>common_iosMain</sourceSet>
           <sourceSet>common_commonMain</sourceSet>
+          <sourceSet>common_iosMain</sourceSet>
+          <sourceSet>common_commonTest</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />
@@ -29,13 +29,12 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$/src/iosTest/kotlin">
+    <content url="file://$MODULE_DIR$/src/iosTest">
       <sourceFolder url="file://$MODULE_DIR$/src/iosTest/kotlin" type="kotlin-test" />
     </content>
-    <content url="file://$MODULE_DIR$/src/iosTest/resources" />
     <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="common_commonTest" scope="TEST" />
+    <orderEntry type="module" module-name="common_commonMain" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.3.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-common:1.3.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.21" level="project" />
@@ -1083,7 +1082,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="common_commonMain" scope="TEST" />
+    <orderEntry type="module" module-name="common_commonTest" scope="TEST" />
     <orderEntry type="module" module-name="common_iosMain" scope="TEST" />
   </component>
   <component name="TestModuleProperties" production-module="common_iosMain" />

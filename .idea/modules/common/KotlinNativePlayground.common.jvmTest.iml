@@ -4,8 +4,8 @@
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="JVM 1.6" useProjectSettings="false" isTestModule="true" externalProjectId=":common">
         <sourceSets>
-          <sourceSet>KotlinNativePlayground.common.commonTest</sourceSet>
           <sourceSet>KotlinNativePlayground.common.jvmMain</sourceSet>
+          <sourceSet>KotlinNativePlayground.common.commonTest</sourceSet>
           <sourceSet>KotlinNativePlayground.common.commonMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
@@ -46,14 +46,14 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="KotlinNativePlayground.common.commonTest" scope="TEST" />
+    <orderEntry type="module" module-name="KotlinNativePlayground.common.jvmMain" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.3.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-common:1.3.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.21" level="project" />
     <orderEntry type="module" module-name="KotlinNativePlayground.common.commonMain" scope="TEST" />
-    <orderEntry type="module" module-name="KotlinNativePlayground.common.jvmMain" scope="TEST" />
+    <orderEntry type="module" module-name="KotlinNativePlayground.common.commonTest" scope="TEST" />
   </component>
   <component name="TestModuleProperties" production-module="KotlinNativePlayground.common.jvmMain" />
 </module>

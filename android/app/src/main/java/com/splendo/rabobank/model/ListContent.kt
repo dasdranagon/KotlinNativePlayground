@@ -1,5 +1,7 @@
 package com.splendo.rabobank.model
 
+import android.app.Person
+
 object ListContent {
-    let items
+    val items = mutableListOf<Person>()
 }

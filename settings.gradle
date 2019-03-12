@@ -10,4 +10,4 @@
 rootProject.name = 'KotlinNativePlayground'
 
 include 'common'
-include 'android'
+include 'android:app'

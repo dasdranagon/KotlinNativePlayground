@@ -4,9 +4,9 @@
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="Native " useProjectSettings="false" isTestModule="true" externalProjectId=":common">
         <sourceSets>
+          <sourceSet>KotlinNativePlayground.common.commonTest</sourceSet>
           <sourceSet>KotlinNativePlayground.common.iosMain</sourceSet>
           <sourceSet>KotlinNativePlayground.common.commonMain</sourceSet>
-          <sourceSet>KotlinNativePlayground.common.commonTest</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />
@@ -27,15 +27,14 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager">
-    <output-test url="file://$MODULE_DIR$/../../../common/build/classes/kotlin/ios/test" />
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../common/src/iosTest">
       <sourceFolder url="file://$MODULE_DIR$/../../../common/src/iosTest/kotlin" type="kotlin-test" />
     </content>
     <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="KotlinNativePlayground.common.iosMain" scope="TEST" />
+    <orderEntry type="module" module-name="KotlinNativePlayground.common.commonTest" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.3.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-common:1.3.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.21" level="project" />
@@ -1083,8 +1082,8 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="KotlinNativePlayground.common.commonTest" scope="TEST" />
     <orderEntry type="module" module-name="KotlinNativePlayground.common.commonMain" scope="TEST" />
+    <orderEntry type="module" module-name="KotlinNativePlayground.common.iosMain" scope="TEST" />
   </component>
   <component name="TestModuleProperties" production-module="KotlinNativePlayground.common.iosMain" />
 </module>

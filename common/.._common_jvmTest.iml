@@ -4,8 +4,8 @@
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="JVM 1.6" useProjectSettings="false" isTestModule="true" externalProjectId=":../common">
         <sourceSets>
-          <sourceSet>.._common_jvmMain</sourceSet>
           <sourceSet>.._common_commonMain</sourceSet>
+          <sourceSet>.._common_jvmMain</sourceSet>
           <sourceSet>.._common_commonTest</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
@@ -47,14 +47,14 @@
     <content url="file://$MODULE_DIR$/src/jvmTest/resources" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name=".._common_jvmMain" scope="TEST" />
+    <orderEntry type="module" module-name=".._common_commonMain" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.3.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-common:1.3.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.21" level="project" />
     <orderEntry type="module" module-name=".._common_commonTest" scope="TEST" />
-    <orderEntry type="module" module-name=".._common_commonMain" scope="TEST" />
+    <orderEntry type="module" module-name=".._common_jvmMain" scope="TEST" />
   </component>
   <component name="TestModuleProperties" production-module=".._common_jvmMain" />
 </module>

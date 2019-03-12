@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.iosTest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.iosTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.jvmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.jvmMain.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.jvmTest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.jvmTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/app/app.iml" filepath="$PROJECT_DIR$/android/app/app.iml" />
     </modules>
   </component>
 </project>

@@ -37,8 +37,8 @@ class ListPresenter: ListEventsHandler {
     private fun createDisplayItem(person: Person): ListDisplayItem {
         return ListDisplayItem(
                 fullName = "${person.firstName} ${person.surname}",
-                dateOfBirth = person.issueCount.toString(),
-                issueCount = dateFormatter.string(person.dateOfBirth))
+                dateOfBirth = dateFormatter.string(person.dateOfBirth),
+                issueCount =  person.issueCount.toString())
     }
 
     override fun ready() {

@@ -417,7 +417,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT/../common/gradlew\" -p \"$SRCROOT/../common\" buildFramework \\\n-Pxcode.preset=\"$KOTLIN_NATIVE_PRESET\" \\\n-Pxcode.configuration=\"$CONFIGURATION\" \\\n-Pxcode.framework.location=\"$CONFIGURATION_BUILD_DIR\"\n";
+			shellScript = "\"$SRCROOT/../common/gradlew\" -p \"$SRCROOT/..\" buildFramework \\\n-Pxcode.preset=\"$KOTLIN_NATIVE_PRESET\" \\\n-Pxcode.configuration=\"$CONFIGURATION\" \\\n-Pxcode.framework.location=\"$CONFIGURATION_BUILD_DIR\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

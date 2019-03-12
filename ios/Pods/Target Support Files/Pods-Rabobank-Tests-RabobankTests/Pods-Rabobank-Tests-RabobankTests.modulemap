@@ -1,0 +1,6 @@
+module Pods_Rabobank_Tests_RabobankTests {
+  umbrella header "Pods-Rabobank-Tests-RabobankTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -10,7 +10,7 @@ import android.widget.TextView
 import com.splendo.rabobank.ListFragment.OnListFragmentInteractionListener
 import com.splendo.rabobank.dummy.DummyContent.DummyItem
 
-import kotlinx.android.synthetic.main.fragment_list.view.*
+import kotlinx.android.synthetic.main.fragment_list_item.view.*
 
 /**
  * [RecyclerView.Adapter] that can display a [DummyItem] and makes a call to the

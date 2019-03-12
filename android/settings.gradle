@@ -1,2 +1,4 @@
-include 'app'
-include '../common'
+include ':app'
+include ':common'
+
+project(':common').projectDir = new File('../common')

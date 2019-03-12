@@ -6,33 +6,24 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 
-import com.splendo.rabobank.dummy.DummyContent.DummyItem
-
 import kotlinx.android.synthetic.main.fragment_list_item.view.*
+import presenter.ListDisplayItem
 
-/**
- * [RecyclerView.Adapter] that can display a [DummyItem] and makes a call to the
- * specified [OnListFragmentInteractionListener].
- * TODO: Replace the implementation with code for your data type.
- */
 class MyListRecyclerViewAdapter(
-    private val mValues: List<DummyItem>
+        private val mValues: List<ListDisplayItem>
 ) : RecyclerView.Adapter<MyListRecyclerViewAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.fragment_list_item, parent, false)
+                .inflate(R.layout.fragment_list_item, parent, false)
         return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mValues[position]
+
         holder.mIdView.text = item.id
         holder.mContentView.text = item.content
-
-        with(holder.mView) {
-            tag = item
-        }
     }
 
     override fun getItemCount(): Int = mValues.size

@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/KotlinNativePlayground.iml" filepath="$PROJECT_DIR$/.idea/KotlinNativePlayground.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android/KotlinNativePlayground.android.iml" filepath="$PROJECT_DIR$/.idea/modules/android/KotlinNativePlayground.android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.commonMain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.commonTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.iosMain.iml" filepath="$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.iosMain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.iosTest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.iosTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.jvmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.jvmMain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.jvmTest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/KotlinNativePlayground.common.jvmTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/android/app/app.iml" filepath="$PROJECT_DIR$/android/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/common/common.iml" filepath="$PROJECT_DIR$/android/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/playground.iml" filepath="$PROJECT_DIR$/playground.iml" />
     </modules>
   </component>
 </project>

@@ -18,10 +18,10 @@ class ListFragment() : Fragment() {
         val view = inflater.inflate(R.layout.fragment_list, container, false)
         if (view is RecyclerView) {
             with(view) {
-//                layoutManager = LinearLayoutManager(context)
                 adapter = listAdapter
             }
         }
+
         return view
     }
 

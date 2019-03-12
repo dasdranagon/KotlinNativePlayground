@@ -13,12 +13,7 @@ actual constructor(val resource: String)
             handler(null)
             return
         }
-        //FIXME: Implement multithreading
-//        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-            val text = NSString.stringWithContentsOfFile(urlString).toString()
-//            dispatch_async(dispatch_get_main_queue()) {
-                handler(text)
-//            }
-//        }
+        val text = NSString.stringWithContentsOfFile(urlString).toString()
+        handler(text)
     }
 }

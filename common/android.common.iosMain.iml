@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":common:iosTest" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/../android" external.system.id="GRADLE" external.system.module.group="android" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":common:iosMain" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/../android" external.system.id="GRADLE" external.system.module.group="android" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="Native " useProjectSettings="false" isTestModule="true" externalProjectId=":common">
+      <configuration version="3" platform="Native " useProjectSettings="false" isTestModule="false" externalProjectId=":common">
         <sourceSets>
-          <sourceSet>common_commonMain</sourceSet>
-          <sourceSet>common_iosMain</sourceSet>
-          <sourceSet>common_commonTest</sourceSet>
+          <sourceSet>android.common.commonMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />
@@ -29,16 +27,14 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$/src/iosTest">
-      <sourceFolder url="file://$MODULE_DIR$/src/iosTest/kotlin" type="kotlin-test" />
+    <content url="file://$MODULE_DIR$/src/iosMain">
+      <sourceFolder url="file://$MODULE_DIR$/src/iosMain/kotlin" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="common_commonMain" scope="TEST" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.3.21" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-common:1.3.21" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.21" level="project" />
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module" module-name="android.common.commonMain" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.21" level="project" />
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Accelerate" />
@@ -47,7 +43,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Accounts" />
@@ -56,7 +52,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/AddressBook" />
@@ -65,7 +61,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/AddressBookUI" />
@@ -74,7 +70,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/AdSupport" />
@@ -83,7 +79,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/ARKit" />
@@ -92,7 +88,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/AssetsLibrary" />
@@ -101,7 +97,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/AudioToolbox" />
@@ -110,7 +106,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/AuthenticationServices" />
@@ -119,7 +115,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/AVFoundation" />
@@ -128,7 +124,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/AVKit" />
@@ -137,7 +133,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/BusinessChat" />
@@ -146,7 +142,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CallKit" />
@@ -155,7 +151,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CarPlay" />
@@ -164,7 +160,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CFNetwork" />
@@ -173,7 +169,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/ClassKit" />
@@ -182,7 +178,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CloudKit" />
@@ -191,7 +187,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CommonCrypto" />
@@ -200,7 +196,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Contacts" />
@@ -209,7 +205,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/ContactsUI" />
@@ -218,7 +214,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreAudio" />
@@ -227,7 +223,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreAudioKit" />
@@ -236,7 +232,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreBluetooth" />
@@ -245,7 +241,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreData" />
@@ -254,7 +250,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreFoundation" />
@@ -263,7 +259,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreGraphics" />
@@ -272,7 +268,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreImage" />
@@ -281,7 +277,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreLocation" />
@@ -290,7 +286,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreMedia" />
@@ -299,7 +295,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreMIDI" />
@@ -308,7 +304,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreML" />
@@ -317,7 +313,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreMotion" />
@@ -326,7 +322,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreNFC" />
@@ -335,7 +331,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreServices" />
@@ -344,7 +340,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreSpotlight" />
@@ -353,7 +349,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreTelephony" />
@@ -362,7 +358,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreText" />
@@ -371,7 +367,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/CoreVideo" />
@@ -380,7 +376,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/darwin" />
@@ -389,7 +385,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/DeviceCheck" />
@@ -398,7 +394,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/EAGL" />
@@ -407,7 +403,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/EventKit" />
@@ -416,7 +412,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/EventKitUI" />
@@ -425,7 +421,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/ExternalAccessory" />
@@ -434,7 +430,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/FileProvider" />
@@ -443,7 +439,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/FileProviderUI" />
@@ -452,7 +448,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Foundation" />
@@ -461,7 +457,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/GameController" />
@@ -470,7 +466,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/GameKit" />
@@ -479,7 +475,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/GameplayKit" />
@@ -488,7 +484,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/GLKit" />
@@ -497,7 +493,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/GSS" />
@@ -506,7 +502,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/HealthKit" />
@@ -515,7 +511,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/HealthKitUI" />
@@ -524,7 +520,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/HomeKit" />
@@ -533,7 +529,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/iAd" />
@@ -542,7 +538,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/iconv" />
@@ -551,7 +547,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/IdentityLookup" />
@@ -560,7 +556,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/IdentityLookupUI" />
@@ -569,7 +565,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/ImageIO" />
@@ -578,7 +574,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Intents" />
@@ -587,7 +583,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/IntentsUI" />
@@ -596,7 +592,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/IOSurface" />
@@ -605,7 +601,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/LocalAuthentication" />
@@ -614,7 +610,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/MapKit" />
@@ -623,7 +619,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/MediaAccessibility" />
@@ -632,7 +628,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/MediaPlayer" />
@@ -641,7 +637,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/MediaToolbox" />
@@ -650,7 +646,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Messages" />
@@ -659,7 +655,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/MessageUI" />
@@ -668,7 +664,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Metal" />
@@ -677,7 +673,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/MetalKit" />
@@ -686,7 +682,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/MetalPerformanceShaders" />
@@ -695,7 +691,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/MobileCoreServices" />
@@ -704,7 +700,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/ModelIO" />
@@ -713,7 +709,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/MultipeerConnectivity" />
@@ -722,7 +718,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/NaturalLanguage" />
@@ -731,7 +727,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Network" />
@@ -740,7 +736,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/NetworkExtension" />
@@ -749,7 +745,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/NewsstandKit" />
@@ -758,7 +754,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/NotificationCenter" />
@@ -767,7 +763,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/objc" />
@@ -776,7 +772,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/OpenAL" />
@@ -785,7 +781,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/OpenGLES" />
@@ -794,7 +790,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/OpenGLES2" />
@@ -803,7 +799,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/OpenGLES3" />
@@ -812,7 +808,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/OpenGLESCommon" />
@@ -821,7 +817,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/PassKit" />
@@ -830,7 +826,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/PDFKit" />
@@ -839,7 +835,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Photos" />
@@ -848,7 +844,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/PhotosUI" />
@@ -857,7 +853,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/posix" />
@@ -866,7 +862,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/PushKit" />
@@ -875,7 +871,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/QuartzCore" />
@@ -884,7 +880,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/QuickLook" />
@@ -893,7 +889,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/ReplayKit" />
@@ -902,7 +898,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/SafariServices" />
@@ -911,7 +907,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/SceneKit" />
@@ -920,7 +916,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Security" />
@@ -929,7 +925,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Social" />
@@ -938,7 +934,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Speech" />
@@ -947,7 +943,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/SpriteKit" />
@@ -956,7 +952,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/StoreKit" />
@@ -965,7 +961,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/SystemConfiguration" />
@@ -974,7 +970,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Twitter" />
@@ -983,7 +979,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/UIKit" />
@@ -992,7 +988,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/UserNotifications" />
@@ -1001,7 +997,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/UserNotificationsUI" />
@@ -1010,7 +1006,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/VideoSubscriberAccount" />
@@ -1019,7 +1015,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/VideoToolbox" />
@@ -1028,7 +1024,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/Vision" />
@@ -1037,7 +1033,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/WatchConnectivity" />
@@ -1046,7 +1042,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/WatchKit" />
@@ -1055,7 +1051,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/WebKit" />
@@ -1064,7 +1060,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/platform/ios_x64/zlib" />
@@ -1073,7 +1069,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="file://$USER_HOME$/.konan/kotlin-native-macos-1.1.2/klib/common/stdlib" />
@@ -1082,8 +1078,5 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="common_commonTest" scope="TEST" />
-    <orderEntry type="module" module-name="common_iosMain" scope="TEST" />
   </component>
-  <component name="TestModuleProperties" production-module="common_iosMain" />
 </module>

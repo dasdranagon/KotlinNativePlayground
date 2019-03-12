@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="android.common.jvmMain" target="1.6" />
+      <module name="android.common.jvmTest" target="1.6" />
       <module name="common_jvmMain" target="1.6" />
       <module name="common_jvmTest" target="1.6" />
       <module name="KotlinNativePlayground.common.jvmMain" target="1.6" />

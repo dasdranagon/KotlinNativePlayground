@@ -4,8 +4,8 @@
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="Native " useProjectSettings="false" isTestModule="true" externalProjectId=":common">
         <sourceSets>
-          <sourceSet>playground.common.iosMain</sourceSet>
           <sourceSet>playground.common.commonTest</sourceSet>
+          <sourceSet>playground.common.iosMain</sourceSet>
           <sourceSet>playground.common.commonMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
@@ -34,7 +34,7 @@
     </content>
     <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="playground.common.iosMain" scope="TEST" />
+    <orderEntry type="module" module-name="playground.common.commonTest" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.3.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-common:1.3.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.21" level="project" />
@@ -1083,7 +1083,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="playground.common.commonMain" scope="TEST" />
-    <orderEntry type="module" module-name="playground.common.commonTest" scope="TEST" />
+    <orderEntry type="module" module-name="playground.common.iosMain" scope="TEST" />
   </component>
   <component name="TestModuleProperties" production-module="playground.common.iosMain" />
 </module>

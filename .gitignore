@@ -8,6 +8,14 @@
 # Ignore Gradle build output directory
 build
 
+# Android Studio
+*.iml
+.idea
+.gradle
+.navigation
+captures/
+output.json 
+
 ## Build generated
 build/
 DerivedData/

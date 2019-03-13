@@ -21,6 +21,10 @@ class ListScreen : AppCompatActivity(), ListView {
         listener.ready()
     }
 
+    fun onRefresh() {
+        listener.refresh()
+    }
+
     // ListView
     override fun processing(show: Boolean) {
 

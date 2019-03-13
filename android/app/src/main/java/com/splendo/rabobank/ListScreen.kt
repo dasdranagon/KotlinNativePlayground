@@ -2,6 +2,7 @@ package com.splendo.rabobank
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v4.widget.SwipeRefreshLayout
 import presenter.ListDisplayItem
 import presenter.ListEventsHandler
 import view.ListView
@@ -18,16 +19,19 @@ class ListScreen : AppCompatActivity(), ListView {
 
         assembly.presenter.view = this
 
+        swipeRefreshLayout?.setOnRefreshListener {
+            listener.refresh()
+        }
+
         listener.ready()
     }
 
-    fun onRefresh() {
-        listener.refresh()
-    }
+    private val swipeRefreshLayout: SwipeRefreshLayout?
+        get() = findViewById<SwipeRefreshLayout>(R.id.pull_to_refresh)
 
     // ListView
     override fun processing(show: Boolean) {
-
+        swipeRefreshLayout?.isRefreshing = show
     }
 
     override fun update(items: List<ListDisplayItem>) {
